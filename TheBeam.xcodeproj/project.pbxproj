@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1308F4D81B26C67A00A0FD6A /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1308F4D71B26C67A00A0FD6A /* InterfaceController.m */; };
+		1308F4DA1B26C67A00A0FD6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1308F4D91B26C67A00A0FD6A /* Images.xcassets */; };
+		1308F4DE1B26C67A00A0FD6A /* TheBeam WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 1308F4DD1B26C67A00A0FD6A /* TheBeam WatchKit App.app */; };
+		1308F4E61B26C67A00A0FD6A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1308F4E41B26C67A00A0FD6A /* Interface.storyboard */; };
+		1308F4E81B26C67A00A0FD6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1308F4E71B26C67A00A0FD6A /* Images.xcassets */; };
+		1308F4EB1B26C67A00A0FD6A /* TheBeam WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1308F4D21B26C67900A0FD6A /* TheBeam WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1308F5271B272B4900A0FD6A /* LightModeInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1308F5261B272B4900A0FD6A /* LightModeInterfaceController.m */; };
+		1351836C1B243E2000EEF3A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1351836B1B243E2000EEF3A5 /* main.m */; };
+		1351836F1B243E2000EEF3A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1351836E1B243E2000EEF3A5 /* AppDelegate.m */; };
+		135183721B243E2000EEF3A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 135183711B243E2000EEF3A5 /* ViewController.m */; };
+		135183751B243E2000EEF3A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 135183731B243E2000EEF3A5 /* Main.storyboard */; };
+		135183771B243E2000EEF3A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 135183761B243E2000EEF3A5 /* Images.xcassets */; };
+		1351837A1B243E2000EEF3A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135183781B243E2000EEF3A5 /* LaunchScreen.xib */; };
+		135183861B243E2000EEF3A5 /* TheBeamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 135183851B243E2000EEF3A5 /* TheBeamTests.m */; };
+		135183921B243E3E00EEF3A5 /* DynamicColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 135183911B243E3E00EEF3A5 /* DynamicColorViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1308F4DF1B26C67A00A0FD6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1351835E1B243E2000EEF3A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1308F4DC1B26C67A00A0FD6A;
+			remoteInfo = "TheBeam WatchKit App";
+		};
+		1308F4E91B26C67A00A0FD6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1351835E1B243E2000EEF3A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1308F4D11B26C67900A0FD6A;
+			remoteInfo = "TheBeam WatchKit Extension";
+		};
+		135183801B243E2000EEF3A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1351835E1B243E2000EEF3A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 135183651B243E2000EEF3A5;
+			remoteInfo = TheBeam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1308F4F21B26C67A00A0FD6A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1308F4EB1B26C67A00A0FD6A /* TheBeam WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1308F4D21B26C67900A0FD6A /* TheBeam WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TheBeam WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1308F4D51B26C67A00A0FD6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1308F4D61B26C67A00A0FD6A /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		1308F4D71B26C67A00A0FD6A /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		1308F4D91B26C67A00A0FD6A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1308F4DD1B26C67A00A0FD6A /* TheBeam WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TheBeam WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1308F4E31B26C67A00A0FD6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1308F4E51B26C67A00A0FD6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1308F4E71B26C67A00A0FD6A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1308F5251B272B4900A0FD6A /* LightModeInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightModeInterfaceController.h; sourceTree = "<group>"; };
+		1308F5261B272B4900A0FD6A /* LightModeInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightModeInterfaceController.m; sourceTree = "<group>"; };
+		135183661B243E2000EEF3A5 /* TheBeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1351836A1B243E2000EEF3A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1351836B1B243E2000EEF3A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1351836D1B243E2000EEF3A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1351836E1B243E2000EEF3A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		135183701B243E2000EEF3A5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		135183711B243E2000EEF3A5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		135183741B243E2000EEF3A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		135183761B243E2000EEF3A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		135183791B243E2000EEF3A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1351837F1B243E2000EEF3A5 /* TheBeamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheBeamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		135183841B243E2000EEF3A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		135183851B243E2000EEF3A5 /* TheBeamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheBeamTests.m; sourceTree = "<group>"; };
+		135183901B243E3E00EEF3A5 /* DynamicColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DynamicColorViewController.h; path = Library/DynamicColorViewController.h; sourceTree = "<group>"; };
+		135183911B243E3E00EEF3A5 /* DynamicColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DynamicColorViewController.m; path = Library/DynamicColorViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1308F4CF1B26C67900A0FD6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		135183631B243E2000EEF3A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1351837C1B243E2000EEF3A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1308F4D31B26C67900A0FD6A /* TheBeam WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1308F5251B272B4900A0FD6A /* LightModeInterfaceController.h */,
+				1308F5261B272B4900A0FD6A /* LightModeInterfaceController.m */,
+				1308F4D61B26C67A00A0FD6A /* InterfaceController.h */,
+				1308F4D71B26C67A00A0FD6A /* InterfaceController.m */,
+				1308F4D91B26C67A00A0FD6A /* Images.xcassets */,
+				1308F4D41B26C67900A0FD6A /* Supporting Files */,
+			);
+			path = "TheBeam WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		1308F4D41B26C67900A0FD6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1308F4D51B26C67A00A0FD6A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1308F4E11B26C67A00A0FD6A /* TheBeam WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1308F4E41B26C67A00A0FD6A /* Interface.storyboard */,
+				1308F4E71B26C67A00A0FD6A /* Images.xcassets */,
+				1308F4E21B26C67A00A0FD6A /* Supporting Files */,
+			);
+			path = "TheBeam WatchKit App";
+			sourceTree = "<group>";
+		};
+		1308F4E21B26C67A00A0FD6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1308F4E31B26C67A00A0FD6A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1351835D1B243E2000EEF3A5 = {
+			isa = PBXGroup;
+			children = (
+				135183681B243E2000EEF3A5 /* TheBeam */,
+				135183821B243E2000EEF3A5 /* TheBeamTests */,
+				1308F4D31B26C67900A0FD6A /* TheBeam WatchKit Extension */,
+				1308F4E11B26C67A00A0FD6A /* TheBeam WatchKit App */,
+				135183671B243E2000EEF3A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		135183671B243E2000EEF3A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				135183661B243E2000EEF3A5 /* TheBeam.app */,
+				1351837F1B243E2000EEF3A5 /* TheBeamTests.xctest */,
+				1308F4D21B26C67900A0FD6A /* TheBeam WatchKit Extension.appex */,
+				1308F4DD1B26C67A00A0FD6A /* TheBeam WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		135183681B243E2000EEF3A5 /* TheBeam */ = {
+			isa = PBXGroup;
+			children = (
+				135183901B243E3E00EEF3A5 /* DynamicColorViewController.h */,
+				135183911B243E3E00EEF3A5 /* DynamicColorViewController.m */,
+				1351836D1B243E2000EEF3A5 /* AppDelegate.h */,
+				1351836E1B243E2000EEF3A5 /* AppDelegate.m */,
+				135183701B243E2000EEF3A5 /* ViewController.h */,
+				135183711B243E2000EEF3A5 /* ViewController.m */,
+				135183731B243E2000EEF3A5 /* Main.storyboard */,
+				135183761B243E2000EEF3A5 /* Images.xcassets */,
+				135183781B243E2000EEF3A5 /* LaunchScreen.xib */,
+				135183691B243E2000EEF3A5 /* Supporting Files */,
+			);
+			path = TheBeam;
+			sourceTree = "<group>";
+		};
+		135183691B243E2000EEF3A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1351836A1B243E2000EEF3A5 /* Info.plist */,
+				1351836B1B243E2000EEF3A5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		135183821B243E2000EEF3A5 /* TheBeamTests */ = {
+			isa = PBXGroup;
+			children = (
+				135183851B243E2000EEF3A5 /* TheBeamTests.m */,
+				135183831B243E2000EEF3A5 /* Supporting Files */,
+			);
+			path = TheBeamTests;
+			sourceTree = "<group>";
+		};
+		135183831B243E2000EEF3A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				135183841B243E2000EEF3A5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1308F4D11B26C67900A0FD6A /* TheBeam WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1308F4F11B26C67A00A0FD6A /* Build configuration list for PBXNativeTarget "TheBeam WatchKit Extension" */;
+			buildPhases = (
+				1308F4CE1B26C67900A0FD6A /* Sources */,
+				1308F4CF1B26C67900A0FD6A /* Frameworks */,
+				1308F4D01B26C67900A0FD6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1308F4E01B26C67A00A0FD6A /* PBXTargetDependency */,
+			);
+			name = "TheBeam WatchKit Extension";
+			productName = "TheBeam WatchKit Extension";
+			productReference = 1308F4D21B26C67900A0FD6A /* TheBeam WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		1308F4DC1B26C67A00A0FD6A /* TheBeam WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1308F4F01B26C67A00A0FD6A /* Build configuration list for PBXNativeTarget "TheBeam WatchKit App" */;
+			buildPhases = (
+				1308F4DB1B26C67A00A0FD6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TheBeam WatchKit App";
+			productName = "TheBeam WatchKit App";
+			productReference = 1308F4DD1B26C67A00A0FD6A /* TheBeam WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+		135183651B243E2000EEF3A5 /* TheBeam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 135183891B243E2000EEF3A5 /* Build configuration list for PBXNativeTarget "TheBeam" */;
+			buildPhases = (
+				135183621B243E2000EEF3A5 /* Sources */,
+				135183631B243E2000EEF3A5 /* Frameworks */,
+				135183641B243E2000EEF3A5 /* Resources */,
+				1308F4F21B26C67A00A0FD6A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1308F4EA1B26C67A00A0FD6A /* PBXTargetDependency */,
+			);
+			name = TheBeam;
+			productName = TheBeam;
+			productReference = 135183661B243E2000EEF3A5 /* TheBeam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1351837E1B243E2000EEF3A5 /* TheBeamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1351838C1B243E2000EEF3A5 /* Build configuration list for PBXNativeTarget "TheBeamTests" */;
+			buildPhases = (
+				1351837B1B243E2000EEF3A5 /* Sources */,
+				1351837C1B243E2000EEF3A5 /* Frameworks */,
+				1351837D1B243E2000EEF3A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				135183811B243E2000EEF3A5 /* PBXTargetDependency */,
+			);
+			name = TheBeamTests;
+			productName = TheBeamTests;
+			productReference = 1351837F1B243E2000EEF3A5 /* TheBeamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1351835E1B243E2000EEF3A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Dachang;
+				TargetAttributes = {
+					1308F4D11B26C67900A0FD6A = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					1308F4DC1B26C67A00A0FD6A = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					135183651B243E2000EEF3A5 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					1351837E1B243E2000EEF3A5 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 135183651B243E2000EEF3A5;
+					};
+				};
+			};
+			buildConfigurationList = 135183611B243E2000EEF3A5 /* Build configuration list for PBXProject "TheBeam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1351835D1B243E2000EEF3A5;
+			productRefGroup = 135183671B243E2000EEF3A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				135183651B243E2000EEF3A5 /* TheBeam */,
+				1351837E1B243E2000EEF3A5 /* TheBeamTests */,
+				1308F4D11B26C67900A0FD6A /* TheBeam WatchKit Extension */,
+				1308F4DC1B26C67A00A0FD6A /* TheBeam WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1308F4D01B26C67900A0FD6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1308F4DA1B26C67A00A0FD6A /* Images.xcassets in Resources */,
+				1308F4DE1B26C67A00A0FD6A /* TheBeam WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1308F4DB1B26C67A00A0FD6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1308F4E61B26C67A00A0FD6A /* Interface.storyboard in Resources */,
+				1308F4E81B26C67A00A0FD6A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		135183641B243E2000EEF3A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				135183751B243E2000EEF3A5 /* Main.storyboard in Resources */,
+				1351837A1B243E2000EEF3A5 /* LaunchScreen.xib in Resources */,
+				135183771B243E2000EEF3A5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1351837D1B243E2000EEF3A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1308F4CE1B26C67900A0FD6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1308F4D81B26C67A00A0FD6A /* InterfaceController.m in Sources */,
+				1308F5271B272B4900A0FD6A /* LightModeInterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		135183621B243E2000EEF3A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				135183721B243E2000EEF3A5 /* ViewController.m in Sources */,
+				1351836F1B243E2000EEF3A5 /* AppDelegate.m in Sources */,
+				1351836C1B243E2000EEF3A5 /* main.m in Sources */,
+				135183921B243E3E00EEF3A5 /* DynamicColorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1351837B1B243E2000EEF3A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				135183861B243E2000EEF3A5 /* TheBeamTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1308F4E01B26C67A00A0FD6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1308F4DC1B26C67A00A0FD6A /* TheBeam WatchKit App */;
+			targetProxy = 1308F4DF1B26C67A00A0FD6A /* PBXContainerItemProxy */;
+		};
+		1308F4EA1B26C67A00A0FD6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1308F4D11B26C67900A0FD6A /* TheBeam WatchKit Extension */;
+			targetProxy = 1308F4E91B26C67A00A0FD6A /* PBXContainerItemProxy */;
+		};
+		135183811B243E2000EEF3A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 135183651B243E2000EEF3A5 /* TheBeam */;
+			targetProxy = 135183801B243E2000EEF3A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1308F4E41B26C67A00A0FD6A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1308F4E51B26C67A00A0FD6A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		135183731B243E2000EEF3A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				135183741B243E2000EEF3A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		135183781B243E2000EEF3A5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				135183791B243E2000EEF3A5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1308F4EC1B26C67A00A0FD6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TheBeam WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1308F4ED1B26C67A00A0FD6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TheBeam WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1308F4EE1B26C67A00A0FD6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = TheBeam_WatchKit_Extension;
+				INFOPLIST_FILE = "TheBeam WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		1308F4EF1B26C67A00A0FD6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = TheBeam_WatchKit_Extension;
+				INFOPLIST_FILE = "TheBeam WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		135183871B243E2000EEF3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		135183881B243E2000EEF3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1351838A1B243E2000EEF3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TheBeam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1351838B1B243E2000EEF3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TheBeam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1351838D1B243E2000EEF3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TheBeamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheBeam.app/TheBeam";
+			};
+			name = Debug;
+		};
+		1351838E1B243E2000EEF3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TheBeamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheBeam.app/TheBeam";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1308F4F01B26C67A00A0FD6A /* Build configuration list for PBXNativeTarget "TheBeam WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1308F4EE1B26C67A00A0FD6A /* Debug */,
+				1308F4EF1B26C67A00A0FD6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1308F4F11B26C67A00A0FD6A /* Build configuration list for PBXNativeTarget "TheBeam WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1308F4EC1B26C67A00A0FD6A /* Debug */,
+				1308F4ED1B26C67A00A0FD6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		135183611B243E2000EEF3A5 /* Build configuration list for PBXProject "TheBeam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				135183871B243E2000EEF3A5 /* Debug */,
+				135183881B243E2000EEF3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		135183891B243E2000EEF3A5 /* Build configuration list for PBXNativeTarget "TheBeam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1351838A1B243E2000EEF3A5 /* Debug */,
+				1351838B1B243E2000EEF3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1351838C1B243E2000EEF3A5 /* Build configuration list for PBXNativeTarget "TheBeamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1351838D1B243E2000EEF3A5 /* Debug */,
+				1351838E1B243E2000EEF3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1351835E1B243E2000EEF3A5 /* Project object */;
+}

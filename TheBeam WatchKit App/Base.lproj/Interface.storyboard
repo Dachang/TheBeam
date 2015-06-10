@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E7f" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <imageView width="50" height="50" alignment="center" alpha="0.29999999999999999" image="wkLightIndicator" id="v9B-VV-5U5"/>
+                        <label alignment="center" verticalAlignment="bottom" text="灯光强度  30" id="HsE-VK-Eat">
+                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                        </label>
+                        <slider width="1" alignment="center" verticalAlignment="bottom" continuous="YES" value="30" maximum="100" steps="20" id="Duy-X8-Jgx">
+                            <color key="color" red="0.02595118959" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="sliderValueChanged:" destination="AgC-eL-Hgc" id="QFu-8n-85T"/>
+                            </connections>
+                        </slider>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="开启" id="er5-nR-Uhp">
+                            <color key="titleColor" red="0.02595118959" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="powerButtonPressed" destination="AgC-eL-Hgc" id="jlS-hG-D5C"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" verticalAlignment="bottom" hidden="YES" title="照明模式" id="Is1-oV-xNz">
+                            <connections>
+                                <segue destination="T1u-ZU-IOB" kind="push" id="4ux-vy-pa9"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" verticalAlignment="bottom" hidden="YES" title="颜色选择" id="qGz-97-BN6">
+                            <connections>
+                                <segue destination="Am7-AC-yDp" kind="push" id="2kK-eo-mwN"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="colorPickButton" destination="qGz-97-BN6" id="aJM-Ly-VJC"/>
+                        <outlet property="lightIndensityIndicator" destination="v9B-VV-5U5" id="heC-PL-ObR"/>
+                        <outlet property="lightIndensityLabel" destination="HsE-VK-Eat" id="0IY-ZY-Uo2"/>
+                        <outlet property="lightIndensitySlider" destination="Duy-X8-Jgx" id="bF0-qL-bSr"/>
+                        <outlet property="lightModeButton" destination="Is1-oV-xNz" id="6Bp-qi-ZhB"/>
+                        <outlet property="powerButton" destination="er5-nR-Uhp" id="Lwv-V2-YSd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="574" y="286.5"/>
+        </scene>
+        <!--Light Mode Interface Controller-->
+        <scene sceneID="4H4-Ue-XA7">
+            <objects>
+                <controller id="T1u-ZU-IOB" customClass="LightModeInterfaceController">
+                    <items>
+                        <label alignment="center" text="照明模式" id="27r-8b-MUy"/>
+                        <group width="1" height="70" alignment="center" verticalAlignment="center" id="jKR-pX-g5U">
+                            <items>
+                                <button width="70" height="1" alignment="center" verticalAlignment="center" backgroundImage="wkModeWork" id="RhE-pr-jM3">
+                                    <connections>
+                                        <action selector="modeWorkButtonPressed" destination="T1u-ZU-IOB" id="mAg-YA-g6h"/>
+                                    </connections>
+                                </button>
+                                <button width="70" height="1" alignment="center" verticalAlignment="center" backgroundImage="wkModeEntertainment" id="Y2p-Fh-cb3">
+                                    <connections>
+                                        <action selector="modeEntertainmentButtonPressed" destination="T1u-ZU-IOB" id="4za-Ns-eKm"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="70" alignment="center" verticalAlignment="center" id="mo9-IR-96S">
+                            <items>
+                                <button width="70" height="1" alignment="center" verticalAlignment="center" backgroundImage="wkModeCinema" id="5AZ-hi-gwQ">
+                                    <connections>
+                                        <action selector="modeCinemaButtonPressed" destination="T1u-ZU-IOB" id="reB-PK-SXk"/>
+                                    </connections>
+                                </button>
+                                <button width="70" height="1" alignment="center" verticalAlignment="center" backgroundImage="wkModeSleep" id="My8-85-afV">
+                                    <connections>
+                                        <action selector="modeSleepButtonPressed" destination="T1u-ZU-IOB" id="D2I-nf-yiK"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="modeCinemaButton" destination="5AZ-hi-gwQ" id="7yB-Ky-aPL"/>
+                        <outlet property="modeEntertainmentButton" destination="Y2p-Fh-cb3" id="UqH-Kp-VGM"/>
+                        <outlet property="modeSleepButton" destination="My8-85-afV" id="v44-X7-TWR"/>
+                        <outlet property="modeWorkButton" destination="RhE-pr-jM3" id="Ph9-Y4-fqR"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="817" y="254"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="atz-x7-2rR">
+            <objects>
+                <controller id="Am7-AC-yDp">
+                    <items>
+                        <label alignment="center" text="颜色选择" id="s7Q-ML-sol"/>
+                        <button width="1" height="75" alignment="left" backgroundImage="greenColorBackground" id="pHo-PA-6YQ"/>
+                        <button width="1" height="75" alignment="left" backgroundImage="purpleColorBackground" id="NuB-ai-NJn"/>
+                        <button width="1" height="75" alignment="left" backgroundImage="orangeColorBackground" id="fq3-cw-Gk8"/>
+                        <button width="1" height="75" alignment="left" backgroundImage="blueColorBackground" id="piW-XD-o5R"/>
+                        <button width="1" height="75" alignment="left" backgroundImage="yellowColorBackground" id="0lb-TS-cFk"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="817" y="747.5"/>
+        </scene>
+    </scenes>
+</document>
